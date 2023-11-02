@@ -40,10 +40,7 @@ if not restriction:
     st.warning('Please login with your registered email!')
 else:
     path_object = {'General Detection': 'general-detect',
-                   'Coal Detection': 'model-1',
-                   'Seam Detection': 'seam-gb',
-                   'Core Detection': 'core-logging',
-                   'Smart-HSE': 'hse-monitor'}
+                   'Mineral Detection #1': 'model-1'}
 
     tab1, tab2 = st.tabs(['🎦 Video', '📷 Image'])
 

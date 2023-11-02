@@ -50,17 +50,13 @@ if not restriction:
     st.warning('Please login with your registered email!')
 else:
     path_object = {'General Detection': 'general-detect',
-                   'Coal Detection': 'model-1',
-                   'Seam Detection': 'seam-gb',
-                   'Core Detection': 'core-logging',
-                   'Smart-HSE': 'hse-monitor'}
+                   'Mineral Detection #1': 'model-1'}
 
     tab1, tab2 = st.tabs(['🎦 Video', '📷 Image'])
 
     with tab1:
         kind_object = st.selectbox('Please select the kind of object detection do you want.',
-                                   ['General Detection',
-                                    'Coal Detection'],
+                                   list(path_object.keys()),
                                    key='kind-object-detection-1')
 
         if 'object-videos' in state.keys():
@@ -112,7 +108,7 @@ else:
 
         if type_file == 'Yes':
             uploaded_video = st.file_uploader("Upload your video file",
-                                              type=['mp4', 'mkv', 'mpeg'],
+                                              type=['mp4', 'mkv', 'mpeg', 'mov'],
                                               accept_multiple_files=False)
             temp_file = tempfile.NamedTemporaryFile(delete=False)
 
@@ -225,8 +221,7 @@ else:
 
     with tab2:
         kind_object = st.selectbox('Please select the kind of object detection do you want.',
-                                   ['General Detection',
-                                    'Coal Detection'],
+                                   list(path_object.keys()),
                                    key='kind-object-detection-2')
 
         if 'object-pictures' in state.keys():

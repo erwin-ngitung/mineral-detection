@@ -38,10 +38,7 @@ if not restriction:
     st.warning('Please login with your registered email!')
 else:
     path_object = {'General Detection': 'general-detect',
-                   'Coal Detection': 'model-1',
-                   'Seam Detection': 'seam-gb',
-                   'Core Detection': 'core-logging',
-                   'Smart-HSE': 'hse-monitor'}
+                   'Mineral Detection #1': 'model-1'}
 
     tab1, tab2, tab3, tab4 = st.tabs(['⌚ Training Model',
                                       '📊 Dashboard Model',
@@ -51,8 +48,7 @@ else:
     with tab1:
         with st.form("form-training", clear_on_submit=True):
             kind_object = st.selectbox('Please select the kind of object detection do you want.',
-                                       ['General Detection',
-                                        'Coal Detection'],
+                                       list(path_object.keys()),
                                        key='kind-object-training-1')
 
             list_model = os.listdir(f'{PATH}/weights/petrained-model')
@@ -195,10 +191,7 @@ else:
         try:
             kind_object = st.selectbox('Please select the kind of object detection that you want.',
                                        ['General Detection',
-                                        'Coal Detection',
-                                        'Seam Detection',
-                                        'Core Detection',
-                                        'Smart-HSE'],
+                                        'Mineral Detection-1'],
                                        key='kind-object-training-2')
 
             list_weights = [weight_file for weight_file in os.listdir(f'{PATH}/weights/{path_object[kind_object]}')]
