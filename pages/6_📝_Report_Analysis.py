@@ -10,7 +10,7 @@ from io import BytesIO
 import shutil
 
 st.set_page_config(
-    page_title="Report Analysis | SMD 1.0 App",
+    page_title="Report Analysis | MD 1.0 App",
     page_icon="📝",
 )
 
@@ -40,7 +40,7 @@ if not restriction:
     st.warning('Please login with your registered email!')
 else:
     path_object = {'General Detection': 'general-detect',
-                   'Coal Detection': 'front-coal',
+                   'Coal Detection': 'model-1',
                    'Seam Detection': 'seam-gb',
                    'Core Detection': 'core-logging',
                    'Smart-HSE': 'hse-monitor'}
@@ -106,8 +106,8 @@ else:
         # Download Button
         path_model_accuracy = f'{PATH}/reports/{path_object[kind_object]}'
         path_model_validation = f'{PATH}/results/{path_object[kind_object]}'
-        ppt_template1 = f'{PATH}/data/template/format_model-analysis_cmind.pptx'
-        ppt_template2 = f'{PATH}/data/template/format_report-analysis_cmind.pptx'
+        ppt_template1 = f'{PATH}/data/template/format_model-analysis_md.pptx'
+        ppt_template2 = f'{PATH}/data/template/format_report-analysis_md.pptx'
 
         prs1 = cp.model_analysis(path_model_validation, ppt_template1)
 
@@ -196,8 +196,8 @@ else:
             # Download Button
             path_model_accuracy = f'{PATH}/reports/{path_object[kind_object]}'
             path_model_validation = f'{PATH}/results/{path_object[kind_object]}'
-            ppt_template1 = f'{PATH}/data/template/format_model-analysis_cmind.pptx'
-            ppt_template2 = f'{PATH}/data/template/format_report-analysis_cmind.pptx'
+            ppt_template1 = f'{PATH}/data/template/format_model-analysis_md.pptx'
+            ppt_template2 = f'{PATH}/data/template/format_report-analysis_md.pptx'
 
             prs1 = cp.model_analysis(path_model_validation, ppt_template1)
 

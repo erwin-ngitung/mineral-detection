@@ -4,7 +4,7 @@ from utils import check_email, update_json
 from PIL import Image
 
 st.set_page_config(
-    page_title="Sign Up | SMD 1.0 App",
+    page_title="Sign Up | MD 1.0 App",
     page_icon="🔐",
 )
 

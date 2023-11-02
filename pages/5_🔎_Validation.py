@@ -8,7 +8,7 @@ from streamlit import session_state as state
 import streamlit as st
 
 st.set_page_config(
-    page_title="Validation | SMD 1.0 App",
+    page_title="Validation | MD 1.0 App",
     page_icon="🔎‍",
 )
 
@@ -37,7 +37,7 @@ if not restriction:
     st.warning('Please login with your registered email!')
 else:
     path_object = {'General Detection': 'general-detect',
-                   'Coal Detection': 'front-coal',
+                   'Coal Detection': 'model-1',
                    'Seam Detection': 'seam-gb',
                    'Core Detection': 'core-logging',
                    'Smart-HSE': 'hse-monitor'}

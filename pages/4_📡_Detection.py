@@ -20,7 +20,7 @@ import torch
 from ultralytics import YOLO
 
 st.set_page_config(
-    page_title="Detection | SMD 1.0 App",
+    page_title="Detection | MD 1.0 App",
     page_icon="📡",
 )
 
@@ -50,7 +50,7 @@ if not restriction:
     st.warning('Please login with your registered email!')
 else:
     path_object = {'General Detection': 'general-detect',
-                   'Coal Detection': 'front-coal',
+                   'Coal Detection': 'model-1',
                    'Seam Detection': 'seam-gb',
                    'Core Detection': 'core-logging',
                    'Smart-HSE': 'hse-monitor'}

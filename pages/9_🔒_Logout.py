@@ -5,7 +5,7 @@ import shutil
 import os
 
 st.set_page_config(
-    page_title="Logout | SMD 1.0 App",
+    page_title="Logout | MD 1.0 App",
     page_icon="🔒",
 )
 

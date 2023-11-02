@@ -6,7 +6,7 @@
 # └── datasets
 #     └── coco128  ← downloads here (7 MB)
 
-path: ../datasets/front-coal
+path: ../datasets/model-1
 test: images/test
 train: images/train
 val: images/valid

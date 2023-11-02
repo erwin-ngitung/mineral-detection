@@ -4,7 +4,7 @@ from utils import check_account
 from PIL import Image
 
 st.set_page_config(
-    page_title="Login | SMD 1.0 App",
+    page_title="Login | MD 1.0 App",
     page_icon="🔓",
 )
 
@@ -22,7 +22,7 @@ with placeholder.form(key='Form Login'):
     with st2:
         st.image(image)
 
-    st.markdown('#### Login SMD 1.0 Application')
+    st.markdown('#### Login MD 1.0 Application')
     email = st.text_input('Email')
     password = st.text_input('Password', type='password')
     submit = st.form_submit_button('Login',

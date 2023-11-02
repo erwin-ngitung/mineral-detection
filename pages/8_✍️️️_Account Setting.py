@@ -5,7 +5,7 @@ import numpy as np
 from utils import check_email, replace_json
 
 st.set_page_config(
-    page_title="Account | SMD 1.0 App",
+    page_title="Account | MD 1.0 App",
     page_icon="✍️",
 )
 

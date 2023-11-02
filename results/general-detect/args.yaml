@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: weights/yolov8n.pt
-data: data/front-coal.yaml
+data: data/model-1.yaml
 epochs: 10
 patience: 50
 batch: 10

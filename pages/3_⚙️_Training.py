@@ -8,7 +8,7 @@ from ultralytics import YOLO
 from utils import make_zip_only, label_name
 
 st.set_page_config(
-    page_title="Training | SMD 1.0 App",
+    page_title="Training | MD 1.0 App",
     page_icon="⚙️",
 )
 
@@ -38,7 +38,7 @@ if not restriction:
     st.warning('Please login with your registered email!')
 else:
     path_object = {'General Detection': 'general-detect',
-                   'Coal Detection': 'front-coal',
+                   'Coal Detection': 'model-1',
                    'Seam Detection': 'seam-gb',
                    'Core Detection': 'core-logging',
                    'Smart-HSE': 'hse-monitor'}

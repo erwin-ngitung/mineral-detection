@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolov8n.pt
-data: data/front-coal.yaml
+data: data/model-1.yaml
 epochs: 50
 patience: 50
 batch: 16
@@ -12,7 +12,7 @@ cache: false
 device: null
 workers: 8
 project: results
-name: front-coal
+name: model-1
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -94,4 +94,4 @@ copy_paste: 0.0
 cfg: null
 v5loader: false
 tracker: botsort.yaml
-save_dir: results/front-coal2
+save_dir: results/model-12

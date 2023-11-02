@@ -4,7 +4,7 @@ import streamlit as st
 from utils import check_email
 
 st.set_page_config(
-    page_title="Messages | SMD 1.0 App",
+    page_title="Messages | MD 1.0 App",
     page_icon="💬",
 )
 
