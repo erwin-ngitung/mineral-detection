@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolov8n.pt
-data: data/model-1.yaml
+data: /content/drive/MyDrive/MINERAL DETECTION/dataset/data.yaml
 epochs: 50
 patience: 50
 batch: 16
@@ -12,7 +12,7 @@ cache: false
 device: null
 workers: 8
 project: results
-name: model-1
+name: mineral-detection_ver1
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -27,6 +27,7 @@ resume: false
 amp: true
 fraction: 1.0
 profile: false
+freeze: null
 overlap_mask: true
 mask_ratio: 4
 dropout: 0.0
@@ -48,6 +49,7 @@ save_crop: false
 show_labels: true
 show_conf: true
 vid_stride: 1
+stream_buffer: false
 line_width: null
 visualize: false
 augment: false
@@ -92,6 +94,5 @@ mosaic: 1.0
 mixup: 0.0
 copy_paste: 0.0
 cfg: null
-v5loader: false
 tracker: botsort.yaml
-save_dir: results/model-12
+save_dir: results/mineral-detection_ver1
