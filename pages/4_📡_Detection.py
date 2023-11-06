@@ -125,7 +125,7 @@ else:
                                                 value='datasets/general-detect/predict/sample-video-01.mp4')
                 cap = cv2.VideoCapture(streaming_video)
             else:
-                list_files = [file for file in os.listdir(f'{PATH}/datasets/{path_object[kind_object]}/predict')]
+                list_files = [file for file in os.listdir(f'{PATH}/datasets/{path_object[kind_object]}/video')]
                 sample_video = st.selectbox('Please select sample video do you want.',
                                             list_files,
                                             key='sample-video-detection-1')
