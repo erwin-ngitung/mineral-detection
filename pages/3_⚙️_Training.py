@@ -37,8 +37,8 @@ except (Exception,):
 if not restriction:
     st.warning('Please login with your registered email!')
 else:
-    path_object = {'General Detection': 'general-detect',
-                   'Mineral Detection #1': 'model-1'}
+    path_object = {'Mineral Detection #1': 'model-1',
+                   'General Detection': 'general-detect'}
 
     tab1, tab2, tab3, tab4 = st.tabs(['⌚ Training Model',
                                       '📊 Dashboard Model',
