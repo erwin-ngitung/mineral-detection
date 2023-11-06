@@ -129,7 +129,7 @@ else:
                 sample_video = st.selectbox('Please select sample video do you want.',
                                             list_files,
                                             key='sample-video-detection-1')
-                source = f'{PATH}/datasets/{path_object[kind_object]}/predict/{sample_video}'
+                source = f'{PATH}/datasets/{path_object[kind_object]}/image/{sample_video}'
                 cap = cv2.VideoCapture(source)
 
         seconds, minutes, hours = cs.get_time(cap)
