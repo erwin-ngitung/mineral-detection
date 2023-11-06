@@ -48,7 +48,7 @@ else:
     with tab1:
         with st.form("form-training", clear_on_submit=True):
             kind_object = st.selectbox('Please select the kind of object detection do you want.',
-                                       list(path_object.keys()),
+                                       list(path_object.keys()).sort(),
                                        key='kind-object-training-1')
 
             list_model = os.listdir(f'{PATH}/weights/petrained-model')
