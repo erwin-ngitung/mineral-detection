@@ -116,7 +116,7 @@ else:
                 temp_file.write(uploaded_video.read())
                 cap = cv2.VideoCapture(temp_file.name)
             except (Exception,):
-                source = f'{PATH}/datasets/general-detect/predict/sample-video-01.mp4'
+                source = f'{PATH}/datasets/general-detect/video/sample-video-01.mp4'
                 cap = cv2.VideoCapture(source)
 
         else:
@@ -129,7 +129,7 @@ else:
                 sample_video = st.selectbox('Please select sample video do you want.',
                                             list_files,
                                             key='sample-video-detection-1')
-                source = f'{PATH}/datasets/{path_object[kind_object]}/image/{sample_video}'
+                source = f'{PATH}/datasets/{path_object[kind_object]}/video/{sample_video}'
                 cap = cv2.VideoCapture(source)
 
         seconds, minutes, hours = cs.get_time(cap)
